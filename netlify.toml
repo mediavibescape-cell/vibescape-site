@@ -1,0 +1,160 @@
+[build]
+  publish = "site"
+  command = ""
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/work"
+  status = 301
+
+[[redirects]]
+  from = "/blog"
+  to = "/journal"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/work"
+  to = "/work.html"
+  status = 200
+
+[[redirects]]
+  from = "/desk"
+  to = "/desk.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal"
+  to = "/journal.html"
+  status = 200
+
+[[redirects]]
+  from = "/studio"
+  to = "/studio.html"
+  status = 200
+
+[[redirects]]
+  from = "/careers"
+  to = "/careers.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/branding"
+  to = "/services-branding.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/video-production"
+  to = "/services-video-production.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/performance-marketing"
+  to = "/services-performance-marketing.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/web-development"
+  to = "/services-web-development.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/web-apps"
+  to = "/services-web-apps.html"
+  status = 200
+
+[[redirects]]
+  from = "/dubai"
+  to = "/dubai.html"
+  status = 200
+
+[[redirects]]
+  from = "/global"
+  to = "/global.html"
+  status = 200
+
+[[redirects]]
+  from = "/for-agencies"
+  to = "/for-agencies.html"
+  status = 200
+
+[[redirects]]
+  from = "/for-ecommerce-brands"
+  to = "/for-ecommerce-brands.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/offshore-creative-team-vs-in-house"
+  to = "/journal-offshore-creative-team-vs-in-house.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/how-to-brief-a-product-video"
+  to = "/journal-how-to-brief-a-product-video.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/furniture-brand-video-shoot"
+  to = "/journal-furniture-brand-video-shoot.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/boost-post-vs-meta-ads"
+  to = "/journal-boost-post-vs-meta-ads.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/logo-badalna-rebrand-nahi"
+  to = "/journal-logo-badalna-rebrand-nahi.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/dont-look-pakistani-be-pakistani"
+  to = "/journal-dont-look-pakistani-be-pakistani.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/premium-bola-tha-beige-nahi"
+  to = "/journal-premium-bola-tha-beige-nahi.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
