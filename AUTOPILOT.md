@@ -29,10 +29,12 @@ Work in this repo. Never touch site/assets/videos or anything outside the steps 
 - `python3 tools/build.py` and `python3 tools/audit.py` again. The new article must have no issues.
 - Quick sanity: `python3 -c "import xml.etree.ElementTree as E;E.parse('site/sitemap.xml')"` must pass, and `site/journal-<slug>.html` must exist.
 - Mark the topic row `done (YYYY-MM-DD)` in `content/topics.md`.
-- Commit with a message like `Article: <title>` and push to `main`. Netlify deploys automatically from `main`.
+- Commit with a message like `Article: <title>` and push to `main` (the repo is the backup and history; Netlify is NOT linked to it).
+- Build the deploy zip: `python3 tools/make_zip.py /mnt/user-data/outputs`. It must be under 29 MB. If it is bigger, re-encode the largest files in `tools/lite/videos` with ffmpeg (same size 640x640, lower bitrate, no audio), commit them, and rebuild.
+- Send the zip to Bilawal with SendUserFile (status proactive). He drags it onto Netlify > Deploys himself. That is the only way the site goes live.
 
 ## 6. Report
-- Write `reports/YYYY-MM-DD.md` with: what was published (title, URL, target phrase, word count), what the top competing results cover and how ours differs, the improvement made, the remaining audit issues, live checks (open https://vibescapemedia.com/sitemap.xml and the new article URL with WebFetch a few minutes after pushing and note whether they are live), and the next 3 topics.
+- Write `reports/YYYY-MM-DD.md` with: what was published (title, URL, target phrase, word count), what the top competing results cover and how ours differs, the improvement made, the remaining audit issues, live checks (WebFetch the live sitemap and note whether the previous run's article is live, which tells you if Bilawal deployed the last zip), and the next 3 topics.
 - Commit and push the report.
-- Email the report to mediavibescape@gmail.com with the Gmail connector, subject `Vibescape SEO report YYYY-MM-DD: <article title>`. Short, scannable, Roman Urdu and English mix is fine.
+- Email the report to mediavibescape@gmail.com with the Gmail connector, subject `Vibescape SEO report YYYY-MM-DD: <article title>`. Short, scannable, Roman Urdu and English mix is fine. Put this at the very top: "Naya deploy zip tayyar hai. Is run ka session kholo, zip download karo, Netlify > Deploys pe drag karo." plus this session's link if you know it.
 - If any step failed (push refused, build error), still send the email and say exactly what failed and what Bilawal needs to do.

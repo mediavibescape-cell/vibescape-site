@@ -1,6 +1,6 @@
 # Vibescape website
 
-Static site for vibescapemedia.com, deployed by Netlify from `main` (publish directory `site`).
+Static site for vibescapemedia.com, deployed by Netlify by manual zip upload (Netlify Drop). Build the zip with `tools/make_zip.py`.
 
 - `site/` is the published site. `site/index.html` is the source of all pages (single page app, one hidden `<div class="page">` per route).
 - `tools/build.py` regenerates per-page HTML files, sitemap, robots and netlify.toml. Run it after any content change.
