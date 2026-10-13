@@ -116,6 +116,16 @@
   status = 200
 
 [[redirects]]
+  from = "/journal/white-label-video-editing-for-agencies"
+  to = "/journal-white-label-video-editing-for-agencies.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/product-video-production-cost"
+  to = "/journal-product-video-production-cost.html"
+  status = 200
+
+[[redirects]]
   from = "/journal/offshore-creative-team-vs-in-house"
   to = "/journal-offshore-creative-team-vs-in-house.html"
   status = 200

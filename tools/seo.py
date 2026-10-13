@@ -40,6 +40,7 @@ from content import LANDINGS
 for L in LANDINGS:
     PAGES.append((L["path"], L["slug"], L["title"], L["desc"], "0.9"))
 POST_DATES = {a["slug"]: a["iso"] for a in ARTICLES}
+POST_IMG = {a["slug"]: SITE + a["image"] for a in ARTICLES if a.get("image")}
 POST_DATES.update({"logo-badalna-rebrand-nahi": "2026-02-10", "dont-look-pakistani-be-pakistani": "2026-01-15",
               "premium-bola-tha-beige-nahi": "2025-12-12"})
 
@@ -58,12 +59,13 @@ def head_for(path, title, desc, pid):
     url = SITE + (path if path != "/" else "/")
     e = lambda x: html.escape(x, quote=True)
     extra = ""
+    img = POST_IMG.get(pid[5:], OG_IMG) if pid.startswith("post-") else OG_IMG
     if pid.startswith("post-"):
         slug = pid[5:]
         d = POST_DATES.get(slug, TODAY)
         extra = '<script type="application/ld+json">' + json.dumps({
             "@context": "https://schema.org", "@type": "BlogPosting", "headline": title.split(" · ")[0],
-            "description": desc, "datePublished": d, "dateModified": d, "url": url, "image": OG_IMG,
+            "description": desc, "datePublished": d, "dateModified": d, "url": url, "image": img,
             "inLanguage": "en", "mainEntityOfPage": url,
             "author": {"@type": "Organization", "name": "Vibescape Media"},
             "publisher": {"@type": "Organization", "name": "Vibescape Media", "url": SITE}}) + '</script>'
@@ -86,7 +88,7 @@ def head_for(path, title, desc, pid):
             f'<meta property="og:type" content="{"article" if pid.startswith("post-") else "website"}">'
             f'<meta property="og:site_name" content="Vibescape">'
             f'<meta property="og:url" content="{url}"><meta property="og:title" content="{e(title)}">'
-            f'<meta property="og:description" content="{e(desc)}"><meta property="og:image" content="{OG_IMG}">'
+            f'<meta property="og:description" content="{e(desc)}"><meta property="og:image" content="{img}">'
             f'<meta name="twitter:card" content="summary_large_image">\n'
             '<meta name="robots" content="index,follow,max-image-preview:large">\n'
             '<meta name="google-site-verification" content="-yxTkUTixwVhEAfmCnkYXdPDKd4X3sohkHDC34hcvL8">\n' + extra)

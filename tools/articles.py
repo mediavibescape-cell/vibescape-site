@@ -11,7 +11,8 @@ iso: 2026-10-12       (publish date, used for sorting, schema and sitemap)
 excerpt: One or two sentences for the journal list and Google description.
 keyword: main search phrase this article targets
 ---
-Body in simple markdown: paragraphs, "## " headings, "- " lists, **bold**, [links](/internal-or-https).
+Optional: image: /assets/x.jpg (social card; defaults to the first image in the body).
+Body in simple markdown: paragraphs, "![caption](/assets/x.jpg)" images on their own line, "## " headings, "- " lists, **bold**, [links](/internal-or-https).
 """
 import os, re, glob, html
 
@@ -39,6 +40,11 @@ def md_to_blocks(md):
         if all(l.startswith('- ') for l in lines):
             lst.extend(l[2:] for l in lines); flush(); continue
         flush()
+        mi = re.fullmatch(r'!\[([^\]]*)\]\((/assets/[^)\s]+)\)', ' '.join(lines))
+        if mi:
+            alt = html.escape(mi.group(1), quote=True)
+            blocks.append(f'<figure class="aimg"><img src="{mi.group(2)}" alt="{alt}" loading="lazy" decoding="async"><figcaption>{html.escape(mi.group(1), quote=False)}</figcaption></figure>')
+            continue
         if lines[0].startswith('## '):
             blocks.append('<h2>' + inline(lines[0][3:]) + '</h2>')
             rest = ' '.join(lines[1:])
@@ -63,6 +69,9 @@ def load_articles():
         for k in ('slug', 'title', 'cat', 'mins', 'date', 'iso', 'excerpt'):
             if not meta.get(k): raise ValueError(f'{f}: missing {k}')
         meta['body'] = md_to_blocks(m.group(2))
+        im = re.search(r'!\[[^\]]*\]\((/assets/[^)\s]+)\)', m.group(2))
+        meta.setdefault('image', im.group(1) if im else '')
+        if not meta['image'] and im: meta['image'] = im.group(1)
         arts.append(meta)
     arts.sort(key=lambda a: (a['iso'], a['slug']), reverse=True)
     return arts

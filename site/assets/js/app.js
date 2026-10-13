@@ -56,8 +56,12 @@
   /* ---------- reveals ---------- */
   var armed = false;
   var rio = new IntersectionObserver(function (es) {
-    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } });
-  }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    es.forEach(function (e) {
+      /* tall blocks (long articles) can never be 12% visible, so also accept a quarter of the viewport */
+      var vh = e.rootBounds ? e.rootBounds.height : innerHeight;
+      if (e.isIntersecting && (e.intersectionRatio >= 0.12 || e.intersectionRect.height >= vh * 0.25)) { e.target.classList.add('in'); rio.unobserve(e.target); }
+    });
+  }, { threshold: [0, 0.01, 0.02, 0.05, 0.12], rootMargin: '0px 0px -6% 0px' });
   function arm(scope) {
     if (!armed) return;
     $$('[data-split]:not(.in),[data-fade]:not(.in),[data-clip]:not(.in)', scope).forEach(function (el) {

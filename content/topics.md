@@ -6,8 +6,8 @@ Link to: the pages the article should link to, so new articles always feed the m
 
 | # | Status | Working title | Target search phrase | Audience | Link to |
 | --- | --- | --- | --- | --- | --- |
-| 1 | todo | How much does product video production cost? | product video production cost | ecom | /for-ecommerce-brands, /services/video-production |
-| 2 | todo | White label video editing: how agencies scale without hiring | white label video editing for agencies | agency | /for-agencies |
+| 1 | done (2026-10-13) | How much does product video production cost? | product video production cost | ecom | /for-ecommerce-brands, /services/video-production |
+| 2 | done (2026-10-13) | White label video editing: how agencies scale without hiring | white label video editing for agencies | agency | /for-agencies |
 | 3 | todo | Shopify vs custom website for a DTC brand | shopify vs custom website | ecom | /services/web-development, /for-ecommerce-brands |
 | 4 | todo | UGC vs studio product videos: which converts better? | ugc vs professional product video | ecom | /for-ecommerce-brands |
 | 5 | todo | How to outsource motion design without losing quality | outsource motion design | agency | /for-agencies |

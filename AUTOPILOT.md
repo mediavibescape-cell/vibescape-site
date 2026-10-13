@@ -21,6 +21,9 @@ Work in this repo. Never touch site/assets/videos or anything outside the steps 
 - Link to the pages in the topic's "Link to" column and to 1 or 2 related articles. End with a short call to action linking `/contact` or the matching landing page.
 - Set `keyword:` to the target phrase.
 
+- Images: add 3 to 5 real stills from `site/assets` (the work page lists which file is which project, by alt text) with `![caption](/assets/file.jpg)` on their own line. Never use stock or generated images, never caption a still with a client it does not belong to.
+- Internal links: add the new slug to `NEXT` (2 articles it should point to) and to the matching `RELATED` lists in `tools/inject.py`, and add it to `NEXT` of 1 or 2 older articles, so it gets inbound links on day one.
+
 ## 4. Improve one existing page
 - Run `python3 tools/build.py` then `python3 tools/audit.py`.
 - Pick ONE issue from the audit (most valuable first: thin articles under 600 words, missing inbound links, long titles or descriptions) and fix it. For a thin article, expand it with genuinely useful sections. For inbound links, add a natural sentence with a link in a related article.
