@@ -746,3 +746,6 @@ footer{overflow:hidden}
 .lp-pt p{color:var(--stone);font-size:15px;line-height:1.5}
 @media(max-width:1000px){.lp-pts{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.lp-pts{grid-template-columns:1fr}}
+
+.art .keep{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin:56px 0 28px;padding-top:28px;border-top:1px solid var(--gb)}
+.art .keep .small{margin-bottom:4px}
