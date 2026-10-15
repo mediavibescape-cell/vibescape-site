@@ -77,7 +77,8 @@ def head_for(path, title, desc, pid):
     if pid == "home":
         extra += '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [
             {"@type": "Organization", "@id": SITE + "/#org", "name": "Vibescape Media", "url": SITE, "logo": SITE + "/assets/desk/logo.png",
-             "email": "mediavibescape@gmail.com", "telephone": "+923390116056"},
+             "email": "mediavibescape@gmail.com", "telephone": "+923390116056",
+             "sameAs": ["https://www.instagram.com/thevibescapemedia", "https://www.behance.net/vibescape-media"]},
             {"@type": "ProfessionalService", "name": "Vibescape Media Lahore", "url": SITE, "parentOrganization": {"@id": SITE + "/#org"},
              "telephone": "+923390116056", "image": OG_IMG,
              "address": {"@type": "PostalAddress", "streetAddress": "C Block, Model Town", "addressLocality": "Lahore", "addressCountry": "PK"}},
