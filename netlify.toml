@@ -120,6 +120,11 @@
   status = 200
 
 [[redirects]]
+  from = "/journal/shopify-vs-custom-website"
+  to = "/journal-shopify-vs-custom-website.html"
+  status = 200
+
+[[redirects]]
   from = "/journal/white-label-video-editing-for-agencies"
   to = "/journal-white-label-video-editing-for-agencies.html"
   status = 200
