@@ -1,0 +1,67 @@
+{
+  "nav": "Performance marketing",
+  "title": "Performance Marketing Agency · Meta & Google Ads",
+  "desc": "Meta and Google ads run on real data. Vibescape plans funnels, tests creative and reports return on ad spend in plain language. Lahore, Dubai and worldwide.",
+  "h1": "Performance marketing in Lahore.",
+  "lead": "Paid media that pays back. We map the funnel before spending a rupee, make creative built to be tested, and move budget to what actually sells.",
+  "get": [
+    "Meta (Facebook and Instagram) and Google ads",
+    "Funnel planning, audiences and tracking setup",
+    "Creative testing with ads we shoot and edit ourselves",
+    "Lead campaigns with a CRM so every lead is called and tracked",
+    "Monthly reports in plain language: spend, results, return"
+  ],
+  "steps": [
+    {
+      "title": "Map",
+      "text": "Goals, numbers and the funnel, before a single rupee is spent."
+    },
+    {
+      "title": "Build",
+      "text": "Tracking, audiences and a set of creatives made to be tested."
+    },
+    {
+      "title": "Test",
+      "text": "Run, measure, kill what does not work and fund what does."
+    },
+    {
+      "title": "Scale",
+      "text": "Grow the budget on the winners and report every month."
+    }
+  ],
+  "work": [
+    {
+      "type": "desk",
+      "name": "The Desk",
+      "note": "Every lead and every rupee, tracked in one place"
+    },
+    {
+      "type": "film",
+      "name": "Ad creative",
+      "note": "Product ads and reels we shoot in house"
+    },
+    {
+      "type": "web",
+      "name": "Landing pages",
+      "note": "Fast pages built to convert"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is this different from boosting posts?",
+      "a": "Yes. Boost Post is a shortcut with very few controls. Proper campaigns use objectives, audiences, testing and tracking, so you can see what each rupee brings back."
+    },
+    {
+      "q": "Do you handle lead generation?",
+      "a": "Yes. For lead based businesses we run lead campaigns and track every lead in a CRM inside our Desk, so nothing is lost between the ad and the call."
+    },
+    {
+      "q": "What budget do we need?",
+      "a": "It depends on your goals and market. We will recommend a test budget first, then scale once we know what works."
+    },
+    {
+      "q": "Do we own the ad accounts?",
+      "a": "Yes. Ad accounts and pixels stay in your name. We work inside them with access you give us."
+    }
+  ]
+}

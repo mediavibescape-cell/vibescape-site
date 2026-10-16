@@ -1,0 +1,67 @@
+{
+  "nav": "Video production",
+  "title": "Video Production Company in Lahore · Vibescape",
+  "desc": "Brand films, product shoots and social reels from Lahore and Dubai, for brands worldwide. Furniture, beauty, food and footwear, shot with a real crew.",
+  "h1": "Video production in Lahore.",
+  "lead": "Real crew, real light, real people. We concept, direct, shoot and finish brand films, product films and social content, with editing and colour at our sister studio Vesa.",
+  "get": [
+    "Brand films and launch campaigns",
+    "Product films and photography for furniture, interiors, beauty, food and footwear",
+    "Social first reels and short cutdowns for every platform",
+    "Direction, crew, locations, styling and talent",
+    "Editing, colour and sound finishing by Vesa"
+  ],
+  "steps": [
+    {
+      "title": "Concept",
+      "text": "An idea before a format. What should people feel and remember?"
+    },
+    {
+      "title": "Plan",
+      "text": "Shot list, locations, styling and a schedule everyone signs off."
+    },
+    {
+      "title": "Shoot",
+      "text": "A real crew on set, with you or your team in the loop."
+    },
+    {
+      "title": "Finish",
+      "text": "Edit, colour and sound, cut for each platform you post on."
+    }
+  ],
+  "work": [
+    {
+      "type": "film",
+      "name": "Furniture & interiors",
+      "note": "Designers Guild, National Furnishers, Salon Français"
+    },
+    {
+      "type": "film",
+      "name": "Beauty & wellness",
+      "note": "Kay Beauty, Biocos, Bènatural"
+    },
+    {
+      "type": "film",
+      "name": "Food",
+      "note": "Sucre, Cuisine Craft"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do you shoot furniture and interiors?",
+      "a": "Yes, it is one of our biggest categories. We have shot room sets, product films and styled interiors for several furniture and home brands."
+    },
+    {
+      "q": "Can you shoot at our showroom or factory?",
+      "a": "Yes. We shoot on location in Lahore and across Pakistan, and in Dubai, or we can arrange a studio."
+    },
+    {
+      "q": "Do you also edit footage we already have?",
+      "a": "Yes. Editing, colour and sound are handled by our sister post production studio, Vesa."
+    },
+    {
+      "q": "How fast can we get content?",
+      "a": "Social reels can be turned around within days of a shoot. Brand films take longer depending on scale. We agree a timeline before we start."
+    }
+  ]
+}

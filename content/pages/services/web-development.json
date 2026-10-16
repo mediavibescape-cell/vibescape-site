@@ -1,0 +1,67 @@
+{
+  "nav": "Web development",
+  "title": "Web Development Company in Lahore · Shopify & Custom",
+  "desc": "Fast, premium websites and Shopify stores designed around your brand, with SEO and analytics from day one. Built in Lahore for brands worldwide.",
+  "h1": "Web development in Lahore.",
+  "lead": "Sites that look premium and load fast. We design around your work, build on the right platform and wire in SEO and analytics from the first day.",
+  "get": [
+    "Brand websites and portfolios",
+    "Shopify stores for Pakistani and international brands",
+    "Webflow and fully custom builds",
+    "SEO basics, analytics and speed optimisation",
+    "Ongoing care: updates, fixes and new pages"
+  ],
+  "steps": [
+    {
+      "title": "Plan",
+      "text": "Pages, content and the one thing every visitor should do."
+    },
+    {
+      "title": "Design",
+      "text": "A layout built around your brand, not a template."
+    },
+    {
+      "title": "Build",
+      "text": "Clean, fast code on Shopify, Webflow or a custom stack."
+    },
+    {
+      "title": "Launch",
+      "text": "Testing on real phones, SEO setup and handover."
+    }
+  ],
+  "work": [
+    {
+      "type": "web",
+      "name": "Nord Home",
+      "note": "Scandinavian home store on Shopify"
+    },
+    {
+      "type": "web",
+      "name": "Franke Pakistan",
+      "note": "Kitchen systems"
+    },
+    {
+      "type": "web",
+      "name": "Enchanté",
+      "note": "Luxury fragrance house"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Shopify or a custom website?",
+      "a": "For most product brands Shopify is the fastest route to selling online. Custom builds make sense when you need features no platform offers. We will tell you honestly which one fits."
+    },
+    {
+      "q": "Will our website show up on Google?",
+      "a": "Every site we build ships with the SEO basics: clean page titles, descriptions, a sitemap and fast loading. Ranking for competitive searches also needs content over time."
+    },
+    {
+      "q": "Do you maintain websites after launch?",
+      "a": "Yes. We offer monthly care plans for updates, fixes and new pages."
+    },
+    {
+      "q": "How long does a website take?",
+      "a": "A brand website usually takes 3 to 6 weeks. Stores and custom builds depend on the number of products and features."
+    }
+  ]
+}

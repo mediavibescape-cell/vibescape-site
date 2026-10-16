@@ -1,0 +1,67 @@
+{
+  "nav": "Web apps",
+  "title": "Custom Web Apps & Booking Systems · Vibescape",
+  "desc": "Custom web apps for businesses: booking systems, client portals, lead CRMs and internal dashboards, hosted on your own domain. Built by Vibescape in Lahore.",
+  "h1": "Custom web apps, built in house.",
+  "lead": "Some businesses rent five tools and still run on WhatsApp. We build the one tool you actually need, host it and put it on your own domain.",
+  "get": [
+    "Booking systems for clubs, studios, clinics and venues",
+    "Client portals with live updates and reports",
+    "Lead CRMs with call tracking and follow ups",
+    "Internal dashboards for tasks, time and finance",
+    "Hosting, backups and support on a monthly plan"
+  ],
+  "steps": [
+    {
+      "title": "Map",
+      "text": "How the work happens today, and where time and money leak."
+    },
+    {
+      "title": "Prototype",
+      "text": "Clickable screens you can try before we build."
+    },
+    {
+      "title": "Build",
+      "text": "A secure app with logins, roles and your data kept private."
+    },
+    {
+      "title": "Run",
+      "text": "Hosting, daily backups and support, every month."
+    }
+  ],
+  "work": [
+    {
+      "type": "app",
+      "name": "The Padel Elite",
+      "note": "Court bookings moved in house, on the club's own app"
+    },
+    {
+      "type": "desk",
+      "name": "Vibescape Desk",
+      "note": "Our own platform: tasks, time, leads and client portals"
+    },
+    {
+      "type": "app",
+      "name": "Lead CRM",
+      "note": "Every Facebook lead assigned, called and tracked"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What kind of apps do you build?",
+      "a": "Business tools: booking systems, client portals, CRMs and dashboards. Apps that replace spreadsheets, WhatsApp groups and rented software."
+    },
+    {
+      "q": "Who owns the app and the data?",
+      "a": "You do. The domain, the data and the accounts are set up in your name, with clear terms on code ownership in the contract."
+    },
+    {
+      "q": "Is our data safe?",
+      "a": "We build with logins, roles and database rules so each user only sees what they should, and production apps run with daily backups."
+    },
+    {
+      "q": "What does it cost to run?",
+      "a": "There is a one time build fee and a monthly plan that covers hosting, backups and support. We share the running costs upfront."
+    }
+  ]
+}

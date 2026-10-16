@@ -736,8 +736,8 @@ footer{overflow:hidden}
 .sp-chips a:hover{background:var(--paper);color:var(--ink)}
 .sv-more{display:inline-block;margin-top:18px;font-size:15px}
 .art .body h2{font-size:clamp(24px,2.4vw,34px);letter-spacing:-.035em;margin:1.6em 0 .6em}
-.art .body ul{margin:0 0 1.3em 1.1em;color:var(--stone);font-size:clamp(17px,1.3vw,20px);line-height:1.7}
-.art .body li{margin-bottom:.4em}
+.art .body ul,.art .body ol{margin:0 0 1.3em 1.1em;color:var(--stone);font-size:clamp(17px,1.3vw,20px);line-height:1.7}
+.art .body li{margin-bottom:.4em}.art .body ol{padding-left:.3em}
 .art .body b{color:var(--paper);font-weight:500}
 
 .lp-pts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}

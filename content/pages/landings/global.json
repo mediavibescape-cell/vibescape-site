@@ -1,0 +1,64 @@
+{
+  "title": "Offshore Creative Studio for Global Brands · Vibescape",
+  "desc": "A creative studio for brands worldwide. Branding, product films, ad creative and websites from a senior team in Lahore and Dubai, in your hours.",
+  "h1": "A creative team for brands anywhere.",
+  "lead": "Strategy, films, ads and websites from one team in Lahore and Dubai. Agency standard work, studio level costs, and a portal that shows you everything in real time.",
+  "points": [
+    {
+      "title": "Your hours",
+      "text": "Our day overlaps with UK and European working hours, and US mornings. Calls are booked in your time zone."
+    },
+    {
+      "title": "One portal",
+      "text": "Every brief, file, comment and report lives in our Desk. You never have to ask where your work is."
+    },
+    {
+      "title": "Clear pricing",
+      "text": "Fixed scopes or monthly retainers, invoiced in USD. You know the cost before we start."
+    },
+    {
+      "title": "Real production",
+      "text": "A full crew, studio and post production house, so content is shot properly, not stock."
+    }
+  ],
+  "links": [
+    {
+      "title": "For agencies",
+      "text": "White label video, motion, design and web for agencies.",
+      "url": "/for-agencies"
+    },
+    {
+      "title": "For ecommerce brands",
+      "text": "Product films, ad creative and Shopify stores.",
+      "url": "/for-ecommerce-brands"
+    },
+    {
+      "title": "Branding",
+      "text": "Strategy, identity and guidelines.",
+      "url": "/services/branding"
+    },
+    {
+      "title": "Web apps",
+      "text": "Portals, booking systems and dashboards.",
+      "url": "/services/web-apps"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do you work with clients outside Pakistan and the UAE?",
+      "a": "Yes. We work remotely with brands and agencies worldwide, with shoots in Lahore, Dubai or on location."
+    },
+    {
+      "q": "How do we communicate day to day?",
+      "a": "Through your client portal, email and scheduled video calls in your time zone. Every request and approval is logged in one place."
+    },
+    {
+      "q": "How do payments work?",
+      "a": "Projects are quoted upfront and invoiced in USD, with milestones for larger projects."
+    },
+    {
+      "q": "Can you shoot our products if we are abroad?",
+      "a": "Yes. Many brands ship products to our Lahore studio for shoots, which is often far more cost effective than local production."
+    }
+  ]
+}

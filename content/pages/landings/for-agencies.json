@@ -1,0 +1,64 @@
+{
+  "title": "White Label Video, Design & Web for Agencies · Vibescape",
+  "desc": "White label video editing, motion design, social content, design and web development for agencies. Your brand on the work, our team behind it. Senior team in Lahore.",
+  "h1": "Your agency's production team.",
+  "lead": "Take on more clients without hiring. We work behind your brand on editing, motion, design and builds, with your deadlines, your file naming and your quality bar.",
+  "points": [
+    {
+      "title": "White label",
+      "text": "Your logo, your client, your voice. We never contact your clients unless you ask us to."
+    },
+    {
+      "title": "Senior team",
+      "text": "Editors, motion designers, designers and developers who have shipped work for real brands."
+    },
+    {
+      "title": "Fast turnaround",
+      "text": "A team that works while you sleep, so briefs sent in the evening can be ready by morning."
+    },
+    {
+      "title": "Flexible capacity",
+      "text": "A dedicated pod on retainer, or overflow work project by project."
+    }
+  ],
+  "links": [
+    {
+      "title": "Video editing and colour",
+      "text": "Brand films, reels and ad cutdowns, finished by our post studio Vesa.",
+      "url": "/services/video-production"
+    },
+    {
+      "title": "Motion and 3D",
+      "text": "Logo animations, product animation and motion graphics.",
+      "url": "/work#films-product"
+    },
+    {
+      "title": "Design",
+      "text": "Social content, decks, packaging and brand systems.",
+      "url": "/services/branding"
+    },
+    {
+      "title": "Web development",
+      "text": "Shopify, Webflow and custom builds from your designs.",
+      "url": "/services/web-development"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Will our clients know you exist?",
+      "a": "No. White label means the work is delivered as yours. NDAs are standard."
+    },
+    {
+      "q": "How do we send work?",
+      "a": "Through a shared portal where each brief becomes a task with an owner and a due date, so you can track every job."
+    },
+    {
+      "q": "Can we start with a small test?",
+      "a": "Yes. Most agencies start with one paid test project before moving to a retainer."
+    },
+    {
+      "q": "Which tools do you use?",
+      "a": "Premiere Pro, DaVinci Resolve, After Effects, Figma, Shopify, Webflow and modern web stacks."
+    }
+  ]
+}

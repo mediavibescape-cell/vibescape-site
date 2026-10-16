@@ -100,8 +100,8 @@ def build(path, pid, title, desc):
     s = re.sub(r'<link rel="canonical"[^>]*>\s*', '', s)
     s = re.sub(r'<meta property="og:[^>]*>\s*', '', s)
     s = re.sub(r'<meta name="(twitter:card|robots|google-site-verification)"[^>]*>\s*', '', s)
-    s = re.sub(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "@type": "BlogPosting".*?</script>', '', s, flags=re.S)
-    s = re.sub(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "(@type": "FAQPage|@graph)".*?</script>', '', s, flags=re.S)
+    s = re.sub(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "@type": "BlogPosting".*?</script>\n?', '', s, flags=re.S)
+    s = re.sub(r'<script type="application/ld\+json">\{"@context": "https://schema.org", "(@type": "FAQPage|@graph)".*?</script>\n?', '', s, flags=re.S)
     s = s.replace('__HEAD__', head_for(path, title, desc, pid), 1)
     s = re.sub(r'class="page on"', 'class="page"', s)
     s = s.replace(f'class="page" id="p-{pid}"', f'class="page on" id="p-{pid}"', 1)
@@ -118,6 +118,12 @@ for path, pid, title, desc, pr in PAGES:
     open(fp, "w").write(html_out)
     out.append((path, pr))
 
+# remove article pages whose article was deleted or renamed
+written = {("index.html" if p == "/" else p.lstrip("/").replace("/", "-") + ".html") for p, _ in out}
+for fn in os.listdir(ROOT):
+    if fn.startswith("journal-") and fn.endswith(".html") and fn not in written:
+        os.remove(os.path.join(ROOT, fn))
+
 # 404 keeps the page id 404 and is noindex
 nf = build("/404", "404", "Page not found · Vibescape", "This page moved or never existed.").replace(
     '<meta name="robots" content="index,follow,max-image-preview:large">', '<meta name="robots" content="noindex">')
@@ -129,7 +135,7 @@ for path, pr in out:
     sm.append(f'  <url><loc>{SITE}{path}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority></url>')
 sm.append('</urlset>')
 open(os.path.join(ROOT, "sitemap.xml"), "w").write("\n".join(sm) + "\n")
-open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: {SITE}/sitemap.xml\n")
 toml = ['[[headers]]\n  for = "/assets/*"\n  [headers.values]\n    Cache-Control = "public, max-age=31536000, immutable"\n',
         '[[headers]]\n  for = "/*.html"\n  [headers.values]\n    Cache-Control = "public, max-age=0, must-revalidate"\n    X-Content-Type-Options = "nosniff"\n    Referrer-Policy = "strict-origin-when-cross-origin"\n',
         '[[headers]]\n  for = "/"\n  [headers.values]\n    Cache-Control = "public, max-age=0, must-revalidate"\n',

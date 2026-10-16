@@ -1,0 +1,42 @@
+{
+  "title": "Creative agency in Dubai · Branding, video & web · Vibescape",
+  "desc": "Creative agency in Business Bay, Dubai, with a production studio in Lahore. Branding, video, performance marketing and websites for UAE brands.",
+  "h1": "Creative agency in Dubai.",
+  "lead": "Strategy and client service in Business Bay, production power in Lahore. One team for branding, films, ads and websites, without Dubai production prices on every frame.",
+  "points": [
+    {
+      "title": "Branding",
+      "text": "Strategy, identity and guidelines for UAE and regional brands.",
+      "url": "/services/branding"
+    },
+    {
+      "title": "Video production",
+      "text": "Shoots in the UAE, or in our Lahore studio with full crew and post.",
+      "url": "/services/video-production"
+    },
+    {
+      "title": "Performance marketing",
+      "text": "Meta and Google campaigns with clear monthly reporting.",
+      "url": "/services/performance-marketing"
+    },
+    {
+      "title": "Websites and apps",
+      "text": "Shopify, Webflow, custom sites and business web apps.",
+      "url": "/services/web-development"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Where is your Dubai office?",
+      "a": "Business Bay, Aswar Building, M Floor."
+    },
+    {
+      "q": "Can you shoot in Dubai?",
+      "a": "Yes. We shoot on location in the UAE, or produce in Lahore when it suits the project and budget better."
+    },
+    {
+      "q": "How do you work across two cities?",
+      "a": "Every client gets a portal into our Desk, with tasks, deliveries and reports in one place, so it does not matter which city the work happens in."
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+# Vibescape site editor (Sveltia CMS, Decap compatible). Open https://vibescapemedia.com/admin
+# Saving here commits to GitHub (main). Netlify, when linked to the repo, runs tools/build.py and publishes.
+
+backend:
+  name: github
+  repo: mediavibescape-cell/vibescape-site
+  branch: main
+  commit_messages:
+    create: "CMS: add {{collection}} {{slug}}"
+    update: "CMS: update {{collection}} {{slug}}"
+    delete: "CMS: delete {{collection}} {{slug}}"
+    uploadMedia: "CMS: upload {{path}}"
+    deleteMedia: "CMS: delete {{path}}"
+
+site_url: https://vibescapemedia.com
+display_url: https://vibescapemedia.com
+slug:
+  encoding: ascii
+  clean_accents: true
+media_folder: site/assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: journal
+    label: Journal articles
+    label_singular: Article
+    description: "Articles on /journal. Images: upload, or use stills already on the site (/assets/...). Write in plain English: no dashes as punctuation, no invented numbers."
+    folder: content/articles
+    extension: md
+    format: frontmatter
+    create: true
+    delete: true
+    identifier_field: title
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.slug}}"
+    summary: "{{iso}} · {{title}}"
+    sortable_fields: [iso, title]
+    preview_path: "journal/{{fields.slug}}"
+    fields:
+      - {name: title, label: Title, widget: string, hint: "40 to 60 characters, include the main search phrase."}
+      - {name: slug, label: URL slug, widget: string, pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Lowercase words joined by hyphens, e.g. ugc-vs-studio-video'], hint: "The page lives at /journal/your-slug. Do not change it after publishing."}
+      - {name: cat, label: Category, widget: select, options: [Strategy, Content, Performance, Design, Branding], default: Strategy}
+      - {name: iso, label: Publish date, widget: datetime, type: date, format: YYYY-MM-DD, default: "{{now}}"}
+      - {name: excerpt, label: Excerpt, widget: text, hint: "120 to 155 characters. Shown on the journal list and in Google."}
+      - {name: keyword, label: Target search phrase, widget: string, required: false}
+      - {name: image, label: Social image, widget: image, required: false, hint: "Optional. Defaults to the first image in the article."}
+      - {name: body, label: Article, widget: markdown, buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list], hint: "Use Heading 2 for sections. Images go on their own line."}
+
+  - name: services
+    label: Service pages
+    label_singular: Service page
+    description: "/services/... pages. URLs and order are fixed; edit the copy."
+    folder: content/pages/services
+    extension: json
+    format: json
+    create: false
+    delete: false
+    identifier_field: nav
+    summary: "{{nav}}"
+    preview_path: "services/{{slug}}"
+    fields:
+      - {name: nav, label: Menu name, widget: string}
+      - {name: title, label: Google title, widget: string, hint: "Under 60 characters."}
+      - {name: desc, label: Google description, widget: text, hint: "Under 160 characters."}
+      - {name: h1, label: Headline, widget: string}
+      - {name: lead, label: Intro, widget: text}
+      - {name: get, label: What you get, widget: list, field: {name: item, label: Item, widget: string}}
+      - name: steps
+        label: Process steps
+        widget: list
+        summary: "{{fields.title}}"
+        fields:
+          - {name: title, label: Step, widget: string}
+          - {name: text, label: Text, widget: text}
+      - name: work
+        label: Work cards
+        widget: list
+        summary: "{{fields.name}}"
+        fields:
+          - {name: type, label: Links to, widget: select, options: [{label: Films, value: film}, {label: Websites, value: web}, {label: The Desk, value: desk}, {label: "Padel Elite app", value: app}, {label: "Nord Home deck", value: nord}, {label: "Enchanté deck", value: enchante}, {label: "Neobiotics deck", value: neobiotics}, {label: "Rahat deck", value: rahat}, {label: "Padel Elite deck", value: padel}, {label: "Franke deck", value: franke}]}
+          - {name: name, label: Title, widget: string}
+          - {name: note, label: Note, widget: string}
+      - &faq
+        name: faq
+        label: FAQ
+        widget: list
+        summary: "{{fields.q}}"
+        fields:
+          - {name: q, label: Question, widget: string}
+          - {name: a, label: Answer, widget: text}
+
+  - name: landings
+    label: Landing pages
+    label_singular: Landing page
+    description: "/global, /for-agencies and /for-ecommerce-brands."
+    folder: content/pages/landings
+    extension: json
+    format: json
+    create: false
+    delete: false
+    identifier_field: h1
+    summary: "/{{slug}} · {{h1}}"
+    preview_path: "{{slug}}"
+    fields:
+      - {name: title, label: Google title, widget: string, hint: "Under 60 characters."}
+      - {name: desc, label: Google description, widget: text, hint: "Under 160 characters."}
+      - {name: h1, label: Headline, widget: string}
+      - {name: lead, label: Intro, widget: text}
+      - name: points
+        label: Key points
+        widget: list
+        summary: "{{fields.title}}"
+        fields:
+          - {name: title, label: Title, widget: string}
+          - {name: text, label: Text, widget: text}
+      - &links
+        name: links
+        label: Link cards
+        widget: list
+        summary: "{{fields.title}}"
+        fields:
+          - {name: title, label: Title, widget: string}
+          - {name: text, label: Text, widget: string}
+          - {name: url, label: Link, widget: string, hint: "A path on this site, e.g. /services/branding"}
+      - *faq
+
+  - name: pages
+    label: Other pages
+    files:
+      - name: dubai
+        label: Dubai page
+        file: content/pages/dubai.json
+        format: json
+        preview_path: dubai
+        fields:
+          - {name: title, label: Google title, widget: string, hint: "Under 60 characters."}
+          - {name: desc, label: Google description, widget: text, hint: "Under 160 characters."}
+          - {name: h1, label: Headline, widget: string}
+          - {name: lead, label: Intro, widget: text}
+          - name: points
+            label: Service cards
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {name: title, label: Title, widget: string}
+              - {name: text, label: Text, widget: string}
+              - {name: url, label: Link, widget: string}
+          - *faq
+
+  - name: settings
+    label: Theme
+    files:
+      - name: theme
+        label: Colours and fonts
+        file: content/theme.json
+        format: json
+        fields:
+          - name: colors
+            label: Colours
+            widget: object
+            fields:
+              - {name: background, label: Background, widget: color, allowInput: true, default: "#050506", hint: "Default #050506"}
+              - {name: surface, label: "Surface (cards, panels)", widget: color, allowInput: true, default: "#0d0d0f", hint: "Default #0d0d0f"}
+              - {name: surface_raised, label: Raised surface, widget: color, allowInput: true, default: "#16161a", hint: "Default #16161a"}
+              - {name: text, label: Main text, widget: color, allowInput: true, default: "#F6F5F1", hint: "Default #F6F5F1. Lines and borders follow this colour."}
+              - {name: text_soft, label: Body text, widget: color, allowInput: true, default: "#B8B4AB", hint: "Default #B8B4AB"}
+              - {name: text_muted, label: Muted text, widget: color, allowInput: true, default: "#85827B", hint: "Default #85827B"}
+              - {name: text_dim, label: Dim text, widget: color, allowInput: true, default: "#4c4a45", hint: "Default #4c4a45"}
+          - name: fonts
+            label: Fonts
+            widget: object
+            fields:
+              - {name: display, label: Headings font, widget: select, default: Space Grotesk, options: [Space Grotesk, Inter, Manrope, DM Sans, Plus Jakarta Sans, Sora, Outfit, Poppins, Montserrat, Work Sans, Syne, Archivo, Instrument Sans, Playfair Display, Fraunces, Lora]}
+              - {name: body, label: Body font, widget: select, default: Inter, options: [Space Grotesk, Inter, Manrope, DM Sans, Plus Jakarta Sans, Sora, Outfit, Poppins, Montserrat, Work Sans, Syne, Archivo, Instrument Sans, Playfair Display, Fraunces, Lora]}
+          - {name: max_width, label: Max page width (px), widget: number, value_type: int, min: 900, max: 2400, default: 1600}

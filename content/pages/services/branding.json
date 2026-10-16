@@ -1,0 +1,67 @@
+{
+  "nav": "Branding",
+  "title": "Branding Agency in Lahore & Dubai · Vibescape",
+  "desc": "Branding agency in Lahore and Dubai for brands worldwide. Strategy, naming, logo and identity systems, packaging and brand guidelines your team can use.",
+  "h1": "Branding agency in Lahore.",
+  "lead": "We build brands people remember. Strategy first, then a name, a voice and an identity system. The logo comes last, because a logo is the entry fee, not the advantage.",
+  "get": [
+    "Brand strategy and positioning: who you are for and why you win",
+    "Naming and tone of voice, in English, Urdu or both",
+    "Logo and full identity system: type, colour, layouts, motion",
+    "Packaging and print for retail and FMCG brands",
+    "Brand guidelines your team and printers can run without us"
+  ],
+  "steps": [
+    {
+      "title": "Truth",
+      "text": "Workshops and research to find the one thing your brand actually owns."
+    },
+    {
+      "title": "Line",
+      "text": "One sentence sharp enough to remember and repeat."
+    },
+    {
+      "title": "System",
+      "text": "An identity that works on a pack, a reel, a billboard and a website."
+    },
+    {
+      "title": "Extend",
+      "text": "Guidelines, templates and launch assets, ready to use."
+    }
+  ],
+  "work": [
+    {
+      "type": "nord",
+      "name": "Nord Home",
+      "note": "Scandinavian home brand identity"
+    },
+    {
+      "type": "enchante",
+      "name": "Enchanté",
+      "note": "Luxury fragrance house"
+    },
+    {
+      "type": "neobiotics",
+      "name": "Neobiotics",
+      "note": "Healthcare brand overhaul"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does a rebrand take?",
+      "a": "Most brand identity projects take 4 to 8 weeks from the first workshop to final guidelines. Naming or a full rebrand of a large business can take longer."
+    },
+    {
+      "q": "Do you only design logos?",
+      "a": "No. A logo alone rarely fixes a brand problem. We start with strategy and build a complete system, so everything you put out looks and sounds like you."
+    },
+    {
+      "q": "Do you work with brands outside Lahore?",
+      "a": "Yes. We work with brands across Pakistan, the UAE and beyond, from our studios in Lahore and Dubai."
+    },
+    {
+      "q": "What does branding cost?",
+      "a": "It depends on scope: a startup identity and a full rebrand for an established company are very different projects. Tell us what you need and we will send a clear proposal."
+    }
+  ]
+}

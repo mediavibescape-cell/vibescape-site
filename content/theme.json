@@ -1,0 +1,16 @@
+{
+  "colors": {
+    "background": "#050506",
+    "surface": "#0d0d0f",
+    "surface_raised": "#16161a",
+    "text": "#F6F5F1",
+    "text_soft": "#B8B4AB",
+    "text_muted": "#85827B",
+    "text_dim": "#4c4a45"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "body": "Inter"
+  },
+  "max_width": 1600
+}

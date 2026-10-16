@@ -2,6 +2,8 @@
 
 Runs Monday, Wednesday and Friday. One run = one new article + one improvement + one report.
 Work in this repo. Never touch site/assets/videos or anything outside the steps below.
+Bilawal can also edit content in the CMS at /admin (commits start with `CMS:`). Pull main before starting and never undo CMS edits.
+Service and landing copy lives in `content/pages/*.json`, theme in `content/theme.json`. The scheduled run does not change the theme.
 
 ## 1. Pick the topic
 - Open `content/topics.md` and take the first row with status `todo`.

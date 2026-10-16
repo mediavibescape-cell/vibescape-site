@@ -1,0 +1,64 @@
+{
+  "title": "Product Video & Ad Creative for Ecommerce Brands",
+  "desc": "Product films, photography and ad creative built to sell, plus Shopify stores that load fast. For DTC and ecommerce brands worldwide. Studio in Lahore.",
+  "h1": "Content that sells online.",
+  "lead": "Product films, photos and ad creative made for the thumbnail, the scroll and the checkout. Ship us your products, we shoot, edit and deliver every format you need.",
+  "points": [
+    {
+      "title": "Built for ads",
+      "text": "Hooks in the first second, several versions to test, and cuts for every placement."
+    },
+    {
+      "title": "Every format",
+      "text": "Hero film, reels, stories, square ads, website loops and stills from one shoot."
+    },
+    {
+      "title": "Real studio",
+      "text": "Furniture, beauty, food, footwear and 3D, shot with a real crew and properly lit."
+    },
+    {
+      "title": "Store ready",
+      "text": "Shopify stores and landing pages that load fast and turn visits into orders."
+    }
+  ],
+  "links": [
+    {
+      "title": "Product films",
+      "text": "See our furniture, beauty, food and footwear work.",
+      "url": "/work#films"
+    },
+    {
+      "title": "Ad creative and media",
+      "text": "Creative testing and Meta and Google campaigns.",
+      "url": "/services/performance-marketing"
+    },
+    {
+      "title": "Shopify stores",
+      "text": "Design and build for DTC brands.",
+      "url": "/services/web-development"
+    },
+    {
+      "title": "How we shoot furniture",
+      "text": "Our approach to filming products that sell.",
+      "url": "/journal/furniture-brand-video-shoot"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do we need to fly in for the shoot?",
+      "a": "No. You can ship products to our studio and join the shoot over a live call, or approve shot lists and selects in your portal."
+    },
+    {
+      "q": "How many assets do we get from one shoot?",
+      "a": "We plan the shoot around every format you need, so one shoot covers films, reels, ads and stills. The exact list is agreed before the shoot."
+    },
+    {
+      "q": "Do you run the ads too?",
+      "a": "We can. Or we deliver creative to your media buyer or agency in the formats they need."
+    },
+    {
+      "q": "Which product categories do you shoot?",
+      "a": "Furniture and interiors, beauty and wellness, food, footwear and product animation in 3D."
+    }
+  ]
+}
