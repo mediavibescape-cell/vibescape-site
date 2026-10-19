@@ -116,6 +116,11 @@
   status = 200
 
 [[redirects]]
+  from = "/journal/outsource-motion-design"
+  to = "/journal-outsource-motion-design.html"
+  status = 200
+
+[[redirects]]
   from = "/journal/ugc-vs-professional-product-video"
   to = "/journal-ugc-vs-professional-product-video.html"
   status = 200
