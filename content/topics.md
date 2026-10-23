@@ -11,7 +11,7 @@ Link to: the pages the article should link to, so new articles always feed the m
 | 3 | done (2026-10-15) | Shopify vs custom website for a DTC brand | shopify vs custom website | ecom | /services/web-development, /for-ecommerce-brands |
 | 4 | done (2026-10-16) | UGC vs studio product videos: which converts better? | ugc vs professional product video | ecom | /for-ecommerce-brands |
 | 5 | done (2026-10-19) | How to outsource motion design without losing quality | outsource motion design | agency | /for-agencies |
-| 6 | todo | Rebrand checklist: 12 signs your brand has outgrown its look | rebrand checklist | global | /services/branding |
+| 6 | done (2026-10-23) | Rebrand checklist: 12 signs your brand has outgrown its look | rebrand checklist | global | /services/branding |
 | 7 | todo | How to plan one shoot that covers a month of content | content shoot planning | ecom | /services/video-production |
 | 8 | todo | Meta ads creative testing: a simple framework | meta ads creative testing framework | ecom | /services/performance-marketing |
 | 9 | todo | Brand guidelines: what to include (with a template) | brand guidelines template | global | /services/branding |

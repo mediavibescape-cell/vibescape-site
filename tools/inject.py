@@ -48,7 +48,7 @@ READ.update({'logo-badalna-rebrand-nahi': 'Logo badalna rebrand nahi hota',
              'dont-look-pakistani-be-pakistani': "Don't look Pakistani. Be Pakistani.",
              'premium-bola-tha-beige-nahi': 'Premium bola tha. Beige nahi.'})
 RELATED = {
-    'branding': ['logo-badalna-rebrand-nahi', 'premium-bola-tha-beige-nahi', 'dont-look-pakistani-be-pakistani'],
+    'branding': ['rebrand-checklist', 'logo-badalna-rebrand-nahi', 'premium-bola-tha-beige-nahi', 'dont-look-pakistani-be-pakistani'],
     'video-production': ['ugc-vs-professional-product-video', 'outsource-motion-design', 'product-video-production-cost', 'how-to-brief-a-product-video', 'furniture-brand-video-shoot'],
     'performance-marketing': ['boost-post-vs-meta-ads', 'ugc-vs-professional-product-video', 'how-to-brief-a-product-video'],
     'web-development': ['shopify-vs-custom-website', 'offshore-creative-team-vs-in-house', 'dont-look-pakistani-be-pakistani'],
@@ -59,6 +59,7 @@ RELATED = {
     'for-ecommerce-brands': ['ugc-vs-professional-product-video', 'shopify-vs-custom-website', 'product-video-production-cost', 'how-to-brief-a-product-video', 'furniture-brand-video-shoot', 'boost-post-vs-meta-ads'],
 }
 NEXT = {
+    'rebrand-checklist': ['logo-badalna-rebrand-nahi', 'premium-bola-tha-beige-nahi'],
     'outsource-motion-design': ['white-label-video-editing-for-agencies', 'how-to-brief-a-product-video'],
     'ugc-vs-professional-product-video': ['how-to-brief-a-product-video', 'boost-post-vs-meta-ads'],
     'shopify-vs-custom-website': ['product-video-production-cost', 'boost-post-vs-meta-ads'],
@@ -68,9 +69,9 @@ NEXT = {
     'furniture-brand-video-shoot': ['how-to-brief-a-product-video', 'boost-post-vs-meta-ads'],
     'how-to-brief-a-product-video': ['product-video-production-cost', 'furniture-brand-video-shoot'],
     'offshore-creative-team-vs-in-house': ['white-label-video-editing-for-agencies', 'outsource-motion-design'],
-    'logo-badalna-rebrand-nahi': ['premium-bola-tha-beige-nahi', 'dont-look-pakistani-be-pakistani'],
+    'logo-badalna-rebrand-nahi': ['rebrand-checklist', 'premium-bola-tha-beige-nahi'],
     'dont-look-pakistani-be-pakistani': ['logo-badalna-rebrand-nahi', 'premium-bola-tha-beige-nahi'],
-    'premium-bola-tha-beige-nahi': ['logo-badalna-rebrand-nahi', 'dont-look-pakistani-be-pakistani'],
+    'premium-bola-tha-beige-nahi': ['rebrand-checklist', 'logo-badalna-rebrand-nahi'],
 }
 def related(key):
     sl = [x for x in RELATED.get(key, []) if x in READ]
