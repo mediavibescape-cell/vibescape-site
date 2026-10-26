@@ -120,6 +120,11 @@
   status = 200
 
 [[redirects]]
+  from = "/journal/content-shoot-planning"
+  to = "/journal-content-shoot-planning.html"
+  status = 200
+
+[[redirects]]
   from = "/journal/rebrand-checklist"
   to = "/journal-rebrand-checklist.html"
   status = 200

@@ -41,7 +41,7 @@ Other places it pinches:
 
 - **App sprawl.** Every app tends to add its own scripts and its own monthly bill. We regularly find stores paying for two apps that do the same job.
 - **Complex products.** Made to order furniture with fabric, size and finish combinations, or bundles with custom pricing rules, can push past what the platform handles neatly.
-- **Lookalike stores.** Popular themes are popular. If your store looks like ten others, the brand work you paid for gets flattened into a template.
+- **Lookalike stores.** Popular themes are popular. If your store looks like ten others, the brand work you paid for gets flattened into a template. If the store is not the only thing that feels dated, our [rebrand checklist](/journal/rebrand-checklist) helps you decide whether the fix is a new theme or a new identity.
 - **Lock in.** Products, customers and orders can be exported. Your theme code and app setup do not move with you.
 
 ## When a custom website is worth it
